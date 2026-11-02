@@ -1,5 +1,14 @@
 <div align="center">
-  <img src="assets/readme/hero.svg" alt="COMPUTER SCIENCE. YEAR TWO. Ralph's second-year coursework archive at UPC." width="100%">
+  <picture>
+    <source media="(prefers-color-scheme: light) and (prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/readme/hero-mobile-light.svg">
+    <source media="(prefers-color-scheme: light) and (prefers-reduced-motion: reduce)" srcset="assets/readme/hero-light.svg">
+    <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="assets/readme/hero-mobile-animated-light.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/readme/hero-animated-light.svg">
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/readme/hero-mobile.svg">
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/readme/hero.svg">
+    <source media="(max-width: 600px)" srcset="assets/readme/hero-mobile-animated.svg">
+    <img src="assets/readme/hero-animated.svg" alt="COMPUTER SCIENCE. YEAR TWO. Ralph's second-year coursework archive at UPC." width="100%">
+  </picture>
 </div>
 
 <p align="center">
@@ -35,7 +44,10 @@ A collection of machine problems, exercises, homework, and projects from my seco
 
 ## `02 /` Toolkit
 
-<img src="assets/readme/toolkit.svg" alt="C and C++ for pointers, classes, and data structures; Haskell for functions and lists; Prolog for facts and rules; DEEDS for digital circuits and truth tables." width="100%">
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/readme/toolkit-light.svg">
+  <img src="assets/readme/toolkit.svg" alt="C and C++ for pointers, classes, and data structures; Haskell for functions and lists; Prolog for facts and rules; DEEDS for digital circuits and truth tables." width="100%">
+</picture>
 
 <a name="field-notes"></a>
 
@@ -84,4 +96,9 @@ Try `enemies(A, B).` at the prompt. The accompanying `MP4.txt` contains queries 
 
 <br>
 
-<img src="assets/readme/footer.svg" alt="Written from scratch. Kept as a record. Ralphchr / CS2." width="100%">
+<picture>
+  <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="assets/readme/footer-mobile-light.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/readme/footer-light.svg">
+  <source media="(max-width: 600px)" srcset="assets/readme/footer-mobile.svg">
+  <img src="assets/readme/footer.svg" alt="Padayon! Hinay-hinay, basta padayon. Take a breath. Try again. You're getting there." width="100%">
+</picture>
