@@ -59,24 +59,6 @@ function hero(mobile, animated) {
   return s.finish();
 }
 
-function footer(mobile) {
-  const w = mobile ? 600 : 1200, h = mobile ? 300 : 290, p = mobile ? 30 : 48;
-  const s = new SVG(w, h, 'Padayon!', "Hinay-hinay, basta padayon. Take a breath. Try again. You're getting there.");
-  grid(s);
-  s.add(`<path d="M${p} 18H${w-p}" stroke="${C.silver}" stroke-opacity=".22"/><path d="M${p} 18h112" stroke="${C.purple}" stroke-width="2"/>`);
-  s.add(s.text('Padayon!', p, mobile ? 116 : 139, mobile ? 74 : 112, 'display', C.ivory, -2));
-  s.add(s.text('Hinay-hinay, basta padayon.', p, mobile ? 165 : 190, mobile ? 19 : 24, 'mono', C.blue));
-  if (mobile) {
-    s.add(s.text('Take a breath. Try again.', p, 207, 18, 'mono', C.silver));
-    s.add(s.text("You're getting there.", p, 235, 18, 'mono', C.silver));
-  } else {
-    s.add(s.text("Take a breath. Try again. You're getting there.", p, 231, 21, 'mono', C.silver));
-    s.add(`<path d="M1070 152l48-48m-30 0h30v30" fill="none" stroke="${C.purple}" stroke-width="3"/>`);
-  }
-  s.add(s.text('RALPHCHR / CS2', w-p, h-18, 13, 'mono', C.silver, .6, false, 'end'));
-  return s.finish();
-}
-
 function toolkit() {
   const s = new SVG(1200, 352, 'The toolkit', 'C and C++ for data structures. Haskell for functions and lists. Prolog for facts and rules. DEEDS for circuits and truth tables.');
   grid(s);
@@ -105,7 +87,6 @@ for (const mobile of [false, true]) {
   const suffix = mobile ? '-mobile' : '';
   write('hero'+suffix, hero(mobile, false));
   write('hero'+suffix+'-animated', hero(mobile, true));
-  write('footer'+suffix, footer(mobile));
 }
 write('toolkit', toolkit());
-console.log('Built 14 README SVGs with profile fonts, theme variants, and motion fallbacks.');
+console.log('Built 10 README SVGs with profile fonts, theme variants, and motion fallbacks.');

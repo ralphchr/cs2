@@ -93,12 +93,3 @@ Try `enemies(A, B).` at the prompt. The accompanying `MP4.txt` contains queries 
 **Digital circuits** — open the `.pbs` files in DEEDS / Deeds-DcS. The `.jpg` files in the same folder contain the recorded truth tables.
 
 </details>
-
-<br>
-
-<picture>
-  <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="assets/readme/footer-mobile-light.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/readme/footer-light.svg">
-  <source media="(max-width: 600px)" srcset="assets/readme/footer-mobile.svg">
-  <img src="assets/readme/footer.svg" alt="Padayon! Hinay-hinay, basta padayon. Take a breath. Try again. You're getting there." width="100%">
-</picture>
