@@ -1,6 +1,3 @@
-// Naming guide: classes are nouns (CreditAccount), functions are verbs (withdraw),
-// constants are ALL_CAPS (REQUIRED_BALANCE), exceptions end with "Error" (InvalidAmountError)
-
 class InvalidAmountError(message: String) : Exception(message)
 class InsufficientFundsError(message: String) : Exception(message)
 class CreditLimitError(message: String) : Exception(message)
@@ -43,12 +40,11 @@ abstract class Account(val number: String, val owner: String, val type: String, 
         try {
             target.receive(amount)
         } catch (ex: Exception) {
-            receive(amount) // give the money back, then report the error
+            receive(amount)
             throw ex
         }
     }
 
-    // used by deposits and incoming transfers
     open fun receive(amount: Double) {
         balance = round2(balance + amount)
     }
@@ -97,7 +93,6 @@ class DebitAccount(number: String, owner: String, startBalance: Double, val rate
     }
 }
 
-// For a credit account, balance is the amount OWED
 class CreditAccount(number: String, owner: String, startBalance: Double,
                     val limit: Double = 10000.0, val rate: Double = 0.02) :
     Account(number, owner, "Credit", startBalance) {
